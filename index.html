@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;700&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>The Shoppies</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="navBar">
+
+            <h1 id="siteTitle"><span><a href="index.html">The <span id="shopifySpan"><img
+                                src="https://cdn3.iconfinder.com/data/icons/social-media-2068/64/_shopping-512.png"
+                                alt="shopify icon" id="shopifyIcon"></span>hoppies</a></span></h1>
+
+            <form id="movieSearchForm">
+
+                <input type="text" id="userSearch" placeholder="Search for a movie">
+
+                <!-- This button will trigger our AJAX call -->
+                <input id="searchButton" type="submit" value="Search">
+            </form>
+        </div>
+
+        <!-- <div id="results" style="display: none">
+            <img src="" alt="movieImage" class="imageResult">
+            <h2 class="titleResult"></h2>
+            <p class="yearResult"></p>
+        </div> -->
+        <div id="nominationsDiv">
+            <h2 id="nomTitle">Nominated Movies</h2>
+            <ol id="nominationsList">
+            </ol>
+        </div>
+        <h2 id="youSearchedThis"></h2>
+        <div id="resultsContainer">
+            <div id="resultsDiv">
+
+            </div>
+        </div>
+
+
+        <!-- You might be able to check the length of this by doing resultsContainer.length. This will be useful for when you're setting a limit to how many movies you can add -->
+        <div id="noResultsBanner"></div>
+        <div id="fourBanner">Congrats, you've nominated the maximum of 5 movies! To nominate any more, first remove one
+            of the currently nominated movies</div>
+        <div id="fiveBanner">
+            <h4>Cannot have more than 5 nominated movies in your list at a time</h5>
+        </div>
+        <div id="doubleBanner">
+            <h4>Cannot nominate the same movie twice</h5>
+        </div>
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="API.js"></script>
+</body>
+
+</html>
